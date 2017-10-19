@@ -1,0 +1,31 @@
+.title {
+	color: black;
+	font-size: 55pt;
+	text-align: center;
+	margin: 0 auto !important;
+}
+
+h1 {
+	font-family: 'Indie Flower', cursive;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p {
+	font-size: 18px;
+/*	max-width: 66%;
+*/	
+	text-align: center;
+	max-width: 66%;
+	margin: 0 auto !important;
+	word-break: normal;
+	white-space: normal;
+}
+
+.sections {
+	margin-left: auto;
+	margin-right: auto;
+	word-break: normal;
+	white-space: normal;
+}
+

@@ -1,0 +1,65 @@
+/*.openDrawer {
+  padding: 1%;
+  color: #000;
+  position: fixed;
+  margin: 2%;
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 2;
+}*/
+
+/*.navigation {
+  width: 15%;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 3;
+}*/
+
+.menu {
+  float: left;
+  font-size: 1em;
+  margin: 0%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navigation ul {
+  font-size: 18px;
+  line-height: 3;
+  font-weight: 400;
+  margin-right: 10%;
+  padding: 10%;
+  list-style-type: none;
+}
+
+.navigation li {
+  height: 5%;
+  width: 100%;
+  margin-bottom: 10%;
+  padding: 5%;
+  cursor: pointer;
+  border-bottom: solid 0.5px rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.navigation li:hover {
+  border-left: solid 5px rgb(167, 167, 167); /*Left vertical bar upon hover*/
+  border-bottom: 0px;
+  color: rgb(167, 167, 167); /*Hover becomes gray*/
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}

@@ -1,0 +1,28 @@
+* {
+	font-size: 13pt;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 35pt;
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 0;
+}
+
+.wide {
+	background-color: rgb(210, 218, 219);
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.pics {
+	background-color: white;
+	display: inline-block;
+	margin: 2em 2em 2em 2em;
+	width: 200px;
+	height: 200px;
+}

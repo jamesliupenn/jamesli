@@ -1,0 +1,18 @@
+
+<!-- <div class="overlay" [@showOverlay]="showOverlay"></div> -->
+
+<div class="navigation" [@hideDrawer]="hideDrawerAnimator">
+	<div class="menu" [hidden]="!hideMenuIdentifier" (mouseenter)="hideDrawer()">
+		JL
+	</div>
+
+	<!--The hiding menu-->
+	<ul [hidden]="!hideDrawerIdentifier" (mouseleave)="hideDrawer()">
+		<a href="_top"><li>HOME</li></a>
+		<a href="#projects"><li>PROJECTS</li></a>
+		<a href="#experience"><li>CAREER</li></a>
+		<a href="#contact"><li>CONTACT</li></a>
+		<a href="#about"><li>ABOUT ME</li></a>
+	</ul>
+</div>
+

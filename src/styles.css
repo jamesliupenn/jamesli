@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+	font-family: 'Raleway', sans-serif;
+	box-sizing: border-box;
+	border: 0px solid black;
+	margin: 0;
+	padding: 0;
+}

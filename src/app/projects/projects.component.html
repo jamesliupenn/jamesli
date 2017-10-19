@@ -1,0 +1,13 @@
+<div class="wide">
+	<h2>Projects</h2>
+	<p></p>
+
+	<a *ngFor="let project of projectImages">
+		<img [src]="project.source" class="pics">
+	</a>
+		<!-- <ul *ngFor="let project of projects">
+			<li> {{ project.name }}</li>
+			{{ project.description }} <br>
+			{{ project.tech }}
+		</ul> -->
+</div>
