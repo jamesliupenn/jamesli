@@ -2,8 +2,10 @@
 	<h2>Projects</h2>
 	<p></p>
 
-	<a *ngFor="let project of projectImages">
-		<img [src]="project.source" class="pics">
+	<a *ngFor="let project of projectImages; let i=index">
+		<img [src]="project.source" [@myPicAnime]="state" 
+		(mouseover)="animateMe()" 
+		(mouseleave)="animateMe()" class="pics">
 	</a>
 		<!-- <ul *ngFor="let project of projects">
 			<li> {{ project.name }}</li>

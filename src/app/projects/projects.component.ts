@@ -1,11 +1,28 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger,state,style,transition,animate,keyframes } from '@angular/animations';
+
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css'],
+  animations: [
+  		trigger('myPicAnime', [
+  			state('in', style({
+  				transform: 'translateX(0)',
+  				opacity: 1
+  			})),
+  			state('out', style({
+  				transform: 'translateX(50px)',
+  				opacity: 0
+  			})),
+  			transition('in <=> out', animate('0.3s ease')),
+  		]),
+  ]
 })
 export class ProjectsComponent implements OnInit {
+
+	state: string = 'in';
 
 	projectImages = [
 		{ source: "../../assets/kone.png" },
@@ -23,4 +40,7 @@ export class ProjectsComponent implements OnInit {
 	ngOnInit() {
 	}
 
+	animateMe(): void {
+		this.state = (this.state === 'in'? 'out' : 'in');
+	}
 }

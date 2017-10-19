@@ -13,13 +13,20 @@ h1 {
 
 p {
 	font-size: 18px;
-/*	max-width: 66%;
-*/	
 	text-align: center;
 	max-width: 66%;
 	margin: 0 auto !important;
 	word-break: normal;
 	white-space: normal;
+	padding-top: 2em;
+}
+
+.intro {
+	padding-bottom: 5em;
+}
+
+.footer {
+	padding-bottom: 1em;
 }
 
 .sections {

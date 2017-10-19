@@ -3,8 +3,16 @@
 
 	<input type="radio" name="colors" (click)="color='lightgreen'">Test
 
+	<div class="tools">
+		<h3> Tools that I use </h3>
+		<span *ngFor="let tool of toolsUsed">
+			<a href="{{ tool?.target }}">
+				<img src="{{ tool?.source }}"/>
+			</a>
+		</span>
+	</div>
 
-		<div class="questions">
+<!-- 		<div class="questions">
 			<span id="q1">
 				<span id="QA">Q:</span> What motivates you?<br>
 			</span>
@@ -23,5 +31,5 @@
 			<span id="a3">
 				<span id="QA">JL:</span><br>
 			</span>
-		</div>
+		</div> -->
 </div>

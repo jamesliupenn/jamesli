@@ -1,2 +1,2 @@
 # jamesli
-Just a plain resume project in Angular
+This is an Angular project that covers TypeScript, JavaScript, HTML, and CSS. 
