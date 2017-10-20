@@ -41,12 +41,20 @@
   <h2>Skills</h2>
   <div class="chart">
     <div class="chart-item-1">
-      <canvas baseChart
+      <!-- <canvas baseChart
                   [data]="frontEndData"
                   [labels]="frontEndLabels"
                   [chartType]="pieChartType"
                   (chartHover)="chartHovered($event)"
-                  (chartClick)="chartClicked($event)"></canvas>
+                  (chartClick)="chartClicked($event)"></canvas> -->
+      <canvas baseChart
+                [data]="barData"
+                [labels]="barLabel"
+                [chartType]="barChartType"
+                [options]="barOptions"
+                [colors]="barChartColors"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
     </div>
 	</div>
 	<div class="chart">
