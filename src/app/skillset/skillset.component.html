@@ -11,44 +11,12 @@
   <input [(ngModel)]="selectedSkill.name" placeholder="name"/>
 </div> -->
 
-<!-- <div class="chart">
-  <canvas baseChart
-          [datasets]="frontEndRadarData"
-          [labels]="frontEndLabels"
-          [chartType]="radarChartType"
-          (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)"></canvas>
-
-  <canvas baseChart
-          [datasets]="backEndRadarData"
-          [labels]="backEndLabels"
-          [chartType]="radarChartType"
-          (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)"></canvas>
-</div> -->
-
-<!-- <div class="chart">
-	<span *ngFor="let skill of skills">
-		<canvas baseChart
-				[data]="skill.data"
-				[labels]="skill.label"
-				[chartType]="pieChartType"
-                (chartHover)="chartHovered($event)"
-                (chartClick)="chartClicked($event)"></canvas>
-	</span>
-</div> -->
 <div class="wide">
   <h2>Skills</h2>
   <div class="chart">
     <div class="chart-item-1">
-      <!-- <canvas baseChart
-                  [data]="frontEndData"
-                  [labels]="frontEndLabels"
-                  [chartType]="pieChartType"
-                  (chartHover)="chartHovered($event)"
-                  (chartClick)="chartClicked($event)"></canvas> -->
       <canvas baseChart
-                [data]="barData"
+                [datasets]="barData"
                 [labels]="barLabel"
                 [chartType]="barChartType"
                 [options]="barOptions"
@@ -57,17 +25,7 @@
                 (chartClick)="chartClicked($event)"></canvas>
     </div>
 	</div>
-	<div class="chart">
-    <div class="chart-item-2">
-  		<canvas baseChart
-                  [data]="backEndData"
-                  [labels]="backEndLabels"
-                  [chartType]="pieChartType"
-                  (chartHover)="chartHovered($event)"
-                  (chartClick)="chartClicked($event)"></canvas>
-    </div>
-	</div>
 	<div class="button">
-		<button (click)="randomizeType()">See My Experiences</button>
+		<button (click)="randomizeType()">Switch Chart Type</button>
 	</div>
 </div>

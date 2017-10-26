@@ -13,25 +13,15 @@ export class SkillsetComponent implements OnInit {
   ngOnInit() {
   }
 
-// Everything pie chart
-  public pieChartType:string = 'pie';
-  public frontEndLabels:string[] = ['Angular 2/4', 'HTML', 'CSS', 'TypeScript', 'UI/UX'];
-  public frontEndData:number[] = [200, 75, 65, 85, 70];
-  public frontEndLineLabels:Array<any> = ['Proficiency', 'Preference'];
-  public frontEndlineData:Array<any> = [
-    [90, 70, 55, 80, 60],
-    [100, 70, 50, 60, 70]
-  ];
-  public backEndLabels:string[] = ['Node.js', 'Express', 'NoSQL', 'RDBMS', 'Python'];
-  public backEndData:number[] = [200, 100, 200, 100, 50];
- 
-
 // Setting up variables for the bar chart
   public barChartType:string = 'bar';
-  public barData:number[] = [2, 2, 3, 2, 3];
-  public barLabel:string[] = ['HTML', 'CSS', 'Angular 2/4', 'UX Design', 'etc'];
-  public barChartColors:Array<any> = [{
-    backgroundColor: 'rgba(150, 150, 240, 0.3)'
+  public barData:any[] = [
+                  { data: [2, 2, 2.5, 2, 1.5, 2, 1, 2, 2], label: 'Experience', stack: '1' },
+                  { data: [2.5, 3, 3, 2, 1.5, 2, 1, 3, 1.5], label: 'Work Preference', stack: '2' }
+                  ];
+  public barLabel:string[] = ['JavaScript', 'Node.js', 'Angular 2/4', 'HTML', 'CSS', 'Python', 'Java', 'MongoDB', 'SQL'];
+  public barChartColors:any[] = [{
+    backgroundColor: 'rgba(150, 180, 220, 0.5)'
   }];
   public barOptions:any = {
     responsive: true,
@@ -42,12 +32,14 @@ export class SkillsetComponent implements OnInit {
           beginAtZero: true
         }
       }]
+    },
+    annotation: {
+      drawTime: 'beforeDatasetsDraw'
     }
   }
 
   public randomizeType():void {
-    // this.pieChartType = this.pieChartType === 'line' ? 'pie' : 'line';
-    // this.data = this.data === this.frontEndlineData? this.frontEndData : this.frontEndlineData;
+    this.barChartType = this.barChartType === 'bar' ? 'line' : 'bar';
   }
 
   public chartClicked(e:any):void {

@@ -1,3 +1,7 @@
+.body {
+	padding-top: 50px;
+}
+
 .title {
 	color: black;
 	font-size: 55pt;
@@ -36,3 +40,19 @@ p {
 	white-space: normal;
 }
 
+.block {
+	display: inline-block;
+}
+
+.block-1 {
+	float: left;
+}
+
+.block-2 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.block-3 {
+	float: right;
+}

@@ -12,6 +12,7 @@ import { HighlighterDirective } from './highlighter.directive';
 // import { ContactComponent } from './contact/contact.component';
 import { SkillsetComponent } from './skillset/skillset.component';
 // import { SocialDetailComponent } from './social-detail.component';
+import { MatButtonModule, MatMenuModule, MatToolbarModule } from '@angular/material';
 
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 
@@ -30,7 +31,10 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
   imports: [
     BrowserModule,
     ChartsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
