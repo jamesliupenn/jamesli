@@ -26,8 +26,8 @@ h2 {
 
 .chart-item-1 {
 	display: inline-block;
-	width: 75%;
-	height: 50%;
+	width: 60%;
+	/*height: 40%;*/
 	/*float: left;*/
 }
 .chart-item-2 {

@@ -38,7 +38,8 @@ export class SkillsetComponent implements OnInit {
     }
   }
 
-  public randomizeType():void {
+// Changes the type when button is clicked, switching between bar & line
+  public changeType():void {
     this.barChartType = this.barChartType === 'bar' ? 'line' : 'bar';
   }
 

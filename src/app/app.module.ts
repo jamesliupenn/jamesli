@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { FormsModule } from '@angular/forms';
 
@@ -9,12 +10,11 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HighlighterDirective } from './highlighter.directive';
-// import { ContactComponent } from './contact/contact.component';
 import { SkillsetComponent } from './skillset/skillset.component';
-// import { SocialDetailComponent } from './social-detail.component';
-import { MatButtonModule, MatMenuModule, MatToolbarModule } from '@angular/material';
-
+import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule } from '@angular/material';
+import { LocatorService } from './locator.service';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { LocationComponent } from './location/location.component';
 
 @NgModule({
   declarations: [
@@ -24,19 +24,20 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
     ContactComponent,
     AboutComponent,
     HighlighterDirective,
-    // ContactComponent,
     SkillsetComponent,
-    // SocialDetailComponent
+    LocationComponent,
   ],
   imports: [
     BrowserModule,
     ChartsModule,
     BrowserAnimationsModule,
+    HttpModule,
     MatButtonModule,
+    MatCardModule,
     MatMenuModule,
     MatToolbarModule
   ],
-  providers: [],
+  providers: [LocatorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
