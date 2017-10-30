@@ -1,5 +1,7 @@
 <mat-toolbar class="toolbar">
-	<span *ngFor="let hello of hellos" [@helloAnime]="hello.state"> {{ hello }} </span>
+	<div [@myAnime]="state" >
+		{{ hello }} 
+	</div>
 	<span class="fill-remaining-space"></span>
 	<span class="toolbar-buttons">
 		<a href="#skills"><button mat-button>SKILLS</button></a>
@@ -14,3 +16,4 @@
 		<a href="#contact"><button mat-button>CONTACT</button></a>
 	</span>
 </mat-toolbar>
+
