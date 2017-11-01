@@ -4,8 +4,9 @@
 
 	<a *ngFor="let project of projectImages; let i=index">
 		<img [src]="project.source" [@myPicAnime]="state" 
-		(mouseover)="animateMe()" 
-		(mouseleave)="animateMe()" class="pics">
+		(mouseover)="animateMe(i)" 
+		(mouseleave)="animateMe(i)" class="pics">
+		{{ projects[i].name }}
 	</a>
 		<!-- <ul *ngFor="let project of projects">
 			<li> {{ project.name }}</li>

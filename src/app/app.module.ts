@@ -15,6 +15,10 @@ import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule } from 
 import { LocatorService } from './locator.service';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { LocationComponent } from './location/location.component';
+import { AgmCoreModule } from '@agm/core';
+
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +39,10 @@ import { LocationComponent } from './location/location.component';
     MatButtonModule,
     MatCardModule,
     MatMenuModule,
-    MatToolbarModule
+    MatToolbarModule,
+    AgmCoreModule.forRoot({
+      apiKey: environment.googleApiKey
+    })
   ],
   providers: [LocatorService],
   bootstrap: [AppComponent]

@@ -13,7 +13,7 @@ import { Observable } from 'rxjs/Rx';
           opacity: 1
         })),
         state('out', style({
-          transform: 'translateX(50px)',
+          transform: 'translateX(30px)',
           opacity: 0
         })),
         transition('in <=> out', animate('1s ease')),
