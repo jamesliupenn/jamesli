@@ -11,7 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HighlighterDirective } from './highlighter.directive';
 import { SkillsetComponent } from './skillset/skillset.component';
-import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatDialogModule } from '@angular/material';
+import { DialogDataComponent } from './app.component';
 import { LocatorService } from './locator.service';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { LocationComponent } from './location/location.component';
@@ -23,6 +24,7 @@ import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
+    DialogDataComponent,
     NavbarComponent,
     ProjectsComponent,
     ContactComponent,
@@ -31,6 +33,9 @@ import { environment } from '../environments/environment';
     SkillsetComponent,
     LocationComponent,
   ],
+  entryComponents: [
+    DialogDataComponent
+  ],
   imports: [
     BrowserModule,
     ChartsModule,
@@ -38,6 +43,7 @@ import { environment } from '../environments/environment';
     HttpModule,
     MatButtonModule,
     MatCardModule,
+    MatDialogModule,
     MatMenuModule,
     MatToolbarModule,
     AgmCoreModule.forRoot({
