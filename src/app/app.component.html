@@ -1,29 +1,30 @@
 <app-navbar></app-navbar>
 <div class="body">
 	<div class="image">
-		<img id="round" src="../assets/james-5.jpg">
+		<img id="round" src="../assets/james-3.png">
 	</div>
 	<div class="title">
 		<h1>{{ title }}</h1>
 	</div>
 
-	<p class="intro"> Hi, this is James Li. I'm a self-taught programmer interested in opportunities as a full-stack developer or a technical solutions engineer, hoping to build cool web applications and make the world a better place! Feel free to <button mat-raised-button (click)="openDialog()">contact me</button> if you would like to get in touch!</p>
+	<p class="intro"> Software developer<br/>
+		Sports enthusiast<br/>
+		
+	</p>
 
 	<!--The resume sections-->
 	<div class="sections">
 		<div id="skills">
 			<app-skillset></app-skillset>
 		</div>
-		<div id="projects">
-			<app-projects></app-projects>
-		</div>
 		<div id="about">
 			<app-about></app-about>
 		</div>
+		<div id="projects">
+			<app-projects></app-projects>
+		</div>
 		<div id="contact">
 			<app-contact></app-contact>
-		</div>
-		<div id="location">
 		</div>
 	</div>
 

@@ -2,18 +2,43 @@
 	<div [@myAnime]="state" >
 		{{ hello }} 
 	</div>
+
 	<span class="fill-remaining-space"></span>
-	<span class="toolbar-buttons">
-		<a href="#skills"><button mat-button>SKILLS</button></a>
-	</span>
-	<span class="toolbar-buttons">
-		<a href="#projects"><button mat-button>PROJECTS</button></a>
-	</span>
-	<span class="toolbar-buttons">
-		<a href="#about"><button mat-button>ABOUT ME</button></a>
-	</span>
-	<span class="toolbar-buttons">
-		<a href="#contact"><button mat-button>CONTACT</button></a>
-	</span>
+
+	<a id="menu" class="header__menu" (click)="isMenuVisible = !isMenuVisible;">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+		<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+		</svg>
+	</a>
+
+	<nav class="nav">
+		<ul class="nav-list">
+			<li class="nav-item"><a href="#"><button mat-button>HOME</button></a></li>
+			<li class="nav-item"><a href="#skills"><button mat-button>SKILLS</button></a></li>
+			<li class="nav-item"><a href="#projects"><button mat-button>PROJECTS</button></a></li>
+			<li class="nav-item"><a href="#about"><button mat-button>ABOUT</button></a></li>
+			<li class="nav-item"><a href="#contact"><button mat-button>CONTACT</button></a></li>
+		</ul>
+	</nav>
+
+	<nav class="drawer" [style.visibility]="showMenu()">
+		<div>
+			<li class="drawer-item">SKILLS</li>
+			<li class="drawer-item">PROJECTS</li>
+			<li class="drawer-item">ABOUT</li>
+			<li class="drawer-item">CONTACT</li>
+		</div>
+	</nav>
+
+<!-- 	<main class="nav-icon">
+		<select> 
+			<option value="/" selected="selected">HOME</option> 
+			<option value="#skills">SKILLS</option> 
+			<option value="#projects">PROJECTS</option> 
+			<option value="#about">ABOUT</option> 
+			<option value="#contact">CONTACT</option> 
+		</select> 
+	</main>
+ -->
 </mat-toolbar>
 

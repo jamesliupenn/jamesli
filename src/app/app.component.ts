@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import {} from 'paperJS';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 })
 
 export class AppComponent implements OnInit {
-  title = 'jamesli';
+  title = 'JAMES LI';
 
   constructor(public dialog: MatDialog){ }
 

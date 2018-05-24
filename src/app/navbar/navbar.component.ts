@@ -24,6 +24,7 @@ import { Observable } from 'rxjs/Rx';
 export class NavbarComponent implements OnInit {
   hellos = ['Hey there', '你好', 'Aloha', '안녕하세요', 'Bonjour', 'こんにちは', 'Guten Tag'];
   hello: string;
+  isMenuVisible: false;
   count = 0;
 
   @Input() isVisible : boolean = true;
@@ -46,4 +47,12 @@ export class NavbarComponent implements OnInit {
     }
   }
 
+  showMenu() {
+    if (this.isMenuVisible) {
+      return "visible";
+    }
+    else {
+      return "hidden";
+    }
+  }
 }

@@ -11,3 +11,66 @@
 .toolbar-buttons {
 	margin-left: 5px;
 }
+
+
+.nav {
+	transform: translate(0, -100px);
+	transition: transform 0.3s ease;
+	position: relative;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 900;
+}
+
+.nav-item {
+	float: left;
+	display: inline;
+}
+
+.nav-item a {
+	display: block;
+}
+
+.drawer {
+	width: 100px;
+	position: absolute;
+	display: block;
+	background-color: grey;
+	font-size: 13px;
+	font-weight: 900;
+}
+
+.drawer-item {
+}
+
+.drawer-item a {
+	display: block;
+}
+
+
+/*
+ * Media Queries 
+ */
+
+@media screen and (max-width: 649px) {
+	.header__menu {
+	    display: inline-block;
+	    position: absolute;
+	    right: 0;
+	    padding: 1em;
+  	}
+  	.header__menu svg {
+    	width: 32px;
+    	fill: #E0E0E0;
+  	}
+
+}
+
+@media screen and (min-width: 650px) {
+	.nav {
+		transform: translate(0, 0);
+	}
+	.drawer {
+		width: 0;
+	}
+}

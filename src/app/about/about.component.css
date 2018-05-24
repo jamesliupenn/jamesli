@@ -4,7 +4,6 @@
 }
 
 h2 {
-	font-family: 'Indie Flower', cursive;
 	font-size: 35pt;
 	margin-bottom: 0;
 }
@@ -13,73 +12,92 @@ p {
 	margin-top: 0;
 }
 
-#QA {
-	font-family: 'Indie Flower', cursive;
-	font-size: 20pt;
+img {
+	width: 120px;
+	height: 120px;
+	border-radius: 10%;
+	border-style: solid;
 }
 
-#q1, #q2, #q3 {
-	
-}
-
-.wide {
-	overflow-x: hidden;
-	width: 100%;
-	padding-top: 5em;
-	padding-bottom: 5em;
-}
-
-
-#round {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-}
-
-.flex {
-	/*display: inline-block;*/
+.container {
 	display: flex;
-	flex-flow: row wrap;
+	flex-wrap: wrap;
 }
 
-.card {
-	width: 700px;
-	display: inline-grid;
-	margin-top: 50px;
-	margin-bottom: 50px;
+.taiwan {
+	width: 50%;
+	order: 1;
 }
 
-.left {
-	padding-left: 15%;
+.philly {
+	width: 50%;
+	order: 2;
 }
 
-.right {
-	padding-right: 15%;
+.cali {
+	width: 50%;
+	order: 3;
 }
 
-mat-card {
-	font-size: 0.7em;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-	hyphens: auto;
-	display: flex;
-	justify-content: center; /* align horizontal */
-	align-items: center; /* align vertical */
+.sports {
+	width: 50%;
+	order: 4;
 }
 
-.image-right {
-	margin-left: 10%;
+.pluggie {
+	width: 50%;
+	order: 5;
 }
 
-.image-left {
-	margin-left: 26%;
-	margin-right: 10%;
+.oracle {
+	width: 50%;
+	order: 6;
 }
 
-div.vertical-line{
-	width: 0px; /* Use only border style */
-	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	border: 1px inset; /* This is default border style for <hr> tag */
+/*
+ * Media Queries 
+ */
+
+@media screen and (min-width: 700px) {
+	img {
+		width: 175px;
+		height: 175px;
+	}
+	.container {
+		width: 750px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.taiwan {
+		width: 33%;
+		order: 1;
+	}
+
+	.philly {
+		width: 33%;
+		order: 2;
+	}
+
+	.cali {
+		width: 33%;
+		order: 3;
+	}
+
+	.sports {
+		width: 33%;
+		order: 4;
+	}
+
+	.pluggie {
+		width: 33%;
+		order: 5;
+	}
+
+	.oracle {
+		width: 33%;
+		order: 6;
+	}
 }
