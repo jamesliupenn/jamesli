@@ -1,5 +1,4 @@
 * {
-	/*font-size: 13pt;*/
 	text-align: center;
 }
 
@@ -7,12 +6,12 @@
 	background-color: rgb(233, 236, 235);
 	overflow-x: hidden;
 	width: 100%;
-	padding-top: 5em;
-	padding-bottom: 5em;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 h2 {
-	font-family: 'Indie Flower', cursive;
+	/*font-family: 'Indie Flower', cursive;*/
 	font-size: 35pt;
 	margin-bottom: 0;
 }
@@ -37,9 +36,24 @@ h2 {
 /*	margin-left: 20%;*/
 }
 
-.button {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;	
-	margin-top: 10px;
+.mobile-chart {
+	/*display: none;*/
+}
+
+/*
+ * Media Queries 
+ */
+
+@media screen and (max-width: 650px) {
+	.chart {
+		display: none;
+	}
+
+	.mobile-chart {
+		width: 100%;
+	}
+
+	th.mat-sort-header-sorted {
+		color: black;
+	}
 }

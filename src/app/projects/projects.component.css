@@ -4,7 +4,7 @@
 }
 
 h2 {
-	font-family: 'Indie Flower', cursive;
+	/*font-family: 'Indie Flower', cursive;*/
 	font-size: 35pt;
 	margin-bottom: 0;
 }
@@ -17,8 +17,8 @@ p {
 	background-color: rgb(210, 218, 219);
 	overflow-x: hidden;
 	width: 100%;
-	padding-top: 5em;
-	padding-bottom: 5em;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 .pics {

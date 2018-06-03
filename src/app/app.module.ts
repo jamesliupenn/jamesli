@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { FormsModule } from '@angular/forms';
@@ -11,7 +12,10 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HighlighterDirective } from './highlighter.directive';
 import { SkillsetComponent } from './skillset/skillset.component';
-import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatDialogModule } from '@angular/material';
+import { 
+          MatButtonModule, MatCardModule, MatMenuModule, 
+          MatToolbarModule, MatDialogModule, MatTableModule
+       } from '@angular/material';
 import { DialogDataComponent } from './app.component';
 import { LocatorService } from './locator.service';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
@@ -45,6 +49,7 @@ import { environment } from '../environments/environment';
     MatCardModule,
     MatDialogModule,
     MatMenuModule,
+    MatTableModule,
     MatToolbarModule,
     AgmCoreModule.forRoot({
       apiKey: environment.googleApiKey

@@ -5,11 +5,14 @@
 
 	<span class="fill-remaining-space"></span>
 
-	<a id="menu" class="header__menu" (click)="isMenuVisible = !isMenuVisible;">
+<!-- 	<a id="menu" class="header__menu" (click)="toggleCollapse()">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 		<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
 		</svg>
-	</a>
+	</a> -->
+
+<!-- 	<span [hidden]="collapse=='open'" class="fa fa-bars fa-lg"></span>
+	<span [hidden]="collapse=='closed'" class="fa fa-times fa-lg"></span> -->
 
 	<nav class="nav">
 		<ul class="nav-list">
@@ -21,24 +24,45 @@
 		</ul>
 	</nav>
 
-	<nav class="drawer" [style.visibility]="showMenu()">
-		<div>
-			<li class="drawer-item">SKILLS</li>
-			<li class="drawer-item">PROJECTS</li>
-			<li class="drawer-item">ABOUT</li>
-			<li class="drawer-item">CONTACT</li>
-		</div>
+	<nav class="drawer">
+		<button mat-button [matMenuTriggerFor]="menu">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+			</svg>
+		</button>
+		<mat-menu #menu="matMenu">
+			<a href="#skills">
+				<button mat-menu-item>
+					<span>SKILLS</span>
+				</button>
+			</a>
+			<a href="#projects">
+				<button mat-menu-item>
+					<span>PROJECTS</span>
+				</button>
+			</a>
+			<a href="#about">
+				<button mat-menu-item>
+					<span>ABOUT</span>
+				</button>
+			</a>
+			<a href="#contact">
+				<button mat-menu-item>
+					<span>CONTACT</span>
+				</button>
+			</a>
+		</mat-menu>
 	</nav>
 
-<!-- 	<main class="nav-icon">
-		<select> 
-			<option value="/" selected="selected">HOME</option> 
-			<option value="#skills">SKILLS</option> 
-			<option value="#projects">PROJECTS</option> 
-			<option value="#about">ABOUT</option> 
-			<option value="#contact">CONTACT</option> 
-		</select> 
-	</main>
- -->
+<!-- 
+	<nav class="drawer">
+		<div>
+			<li class="drawer-item"><a href="#skills">SKILLS</a></li>
+			<li class="drawer-item"><a href="#projects">PROJECTS</a></li>
+			<li class="drawer-item"><a href="#about">ABOUT</a></li>
+			<li class="drawer-item"><a href="#contact">CONTACT</a></li>
+		</div>
+	</nav> -->
+
 </mat-toolbar>
 

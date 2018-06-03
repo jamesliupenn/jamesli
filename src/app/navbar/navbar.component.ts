@@ -17,6 +17,20 @@ import { Observable } from 'rxjs/Rx';
           opacity: 0
         })),
         transition('in <=> out', animate('1s ease')),
+      ]),
+    trigger('collapse', [
+        state('open', style({
+          opacity: '1',
+          display: 'block',
+          transform: 'translate3d(0, 0, 0)'
+        })),
+        state('closed', style({
+          opacity: '0',
+          display: 'none',
+          transform: 'translate3d(0, -100%, 0)'
+        })),
+        transition('closed => open', animate('200ms ease-in')),
+        transition('open => closed', animate('100ms ease-out'))
       ])
     ]
 })
@@ -24,13 +38,17 @@ import { Observable } from 'rxjs/Rx';
 export class NavbarComponent implements OnInit {
   hellos = ['Hey there', '你好', 'Aloha', '안녕하세요', 'Bonjour', 'こんにちは', 'Guten Tag'];
   hello: string;
-  isMenuVisible: false;
+  show: boolean = false;
+  isCollapsed: boolean = true;
+  // collapse: string = "closed";
+  screenWidth = 0;
   count = 0;
 
   @Input() isVisible : boolean = true;
   public state = 'in';
 
   constructor() {
+    this.isCollapsed = true;
   }
 
   ngOnInit() {
@@ -47,12 +65,17 @@ export class NavbarComponent implements OnInit {
     }
   }
 
-  showMenu() {
-    if (this.isMenuVisible) {
-      return "visible";
-    }
-    else {
-      return "hidden";
-    }
+  toggleCollapse() {
+    // this.collapse = this.collapse == "block" ? 'none' : 'block';
+    // console.log(this.collapse);
   }
+  // showMenu() {
+  //   // this.screenWidth = window.innerWidth;
+  //   if (this.isMenuVisible) {
+  //     return "50%";
+  //   }
+  //   else {
+  //     return "0%";
+  //   }
+  // }
 }
