@@ -17,34 +17,36 @@
 	</div>
 
   <div class="mobile-chart">
-    TEST
-    <mat-table #table [dataSource]="dataSource" matSort class="mat-elevation-z8">
-      
+<!--     <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field> -->
+    <mat-table #table [dataSource]="dataSource"> <!-- matSort class="mat-elevation-z8"> -->
+
       <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
-        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+        <mat-cell *matCellDef="let skillset"> {{skillset.name}} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="category">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Category </th>
-        <td mat-cell *matCellDef="let element">
-        {{element.category}} </td>
+        <mat-header-cell *matHeaderCellDef> Category </mat-header-cell>
+        <mat-cell *matCellDef="let skillset">
+        {{skillset.category}} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="level">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Level </th>
-        <td mat-cell *matCellDef="let element">
-        {{element.level}} </td>
+        <mat-header-cell *matHeaderCellDef> Level </mat-header-cell>
+        <mat-cell *matCellDef="let skillset">
+        {{skillset.level}} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="preference">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Preference </th>
-        <td mat-cell *matCellDef="let element">
-        {{element.proficiency}} </td>
+        <mat-header-cell *matHeaderCellDef> Preference </mat-header-cell>
+        <mat-cell *matCellDef="let skillset">
+        {{skillset.preference}} </mat-cell>
       </ng-container>
 
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
     </mat-table>
   </div>
 </div>

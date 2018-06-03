@@ -14,7 +14,8 @@ import { HighlighterDirective } from './highlighter.directive';
 import { SkillsetComponent } from './skillset/skillset.component';
 import { 
           MatButtonModule, MatCardModule, MatMenuModule, 
-          MatToolbarModule, MatDialogModule, MatTableModule
+          MatToolbarModule, MatDialogModule, MatTableModule,
+          MatSortModule, MatFormFieldModule
        } from '@angular/material';
 import { DialogDataComponent } from './app.component';
 import { LocatorService } from './locator.service';
@@ -48,9 +49,11 @@ import { environment } from '../environments/environment';
     MatButtonModule,
     MatCardModule,
     MatDialogModule,
+    MatFormFieldModule,
     MatMenuModule,
     MatTableModule,
     MatToolbarModule,
+    MatSortModule,
     AgmCoreModule.forRoot({
       apiKey: environment.googleApiKey
     })

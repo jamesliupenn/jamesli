@@ -22,7 +22,7 @@ p {
 }
 
 .wide {
-	background-color: rgb(233, 236, 235);
+	/*background-color: rgb(233, 236, 235);*/
 	overflow-x: hidden;
 	width: 100%;
 	padding-top: 2em;
