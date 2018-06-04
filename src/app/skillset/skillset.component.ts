@@ -30,7 +30,7 @@ export class SkillsetComponent implements OnInit {
   public barChartType:string = 'bar';
   public barData:any[] = [
                   { data: [4, 4, 3, 3, 2, 2, 3, 2], label: 'Level of Proficiency', stack: '1' },
-                  { data: [4, 4, 4, 3, 3, 3, 4, 2], label: 'Work Preference', stack: '2' }
+                  { data: [5, 5, 5, 3, 3, 3, 4, 2], label: 'Work Preference', stack: '2' }
                   ];
   public barLabel:string[] = ['JavaScript', 'Node.js', 'Angular', 'HTML', 'CSS', 'Python', 'MongoDB', 'SQL'];
   public barChartColors:any[] = [{
@@ -75,11 +75,11 @@ export interface Skillset {
 
 const SKILLSET_DATA: Skillset[] = [
   {name: 'Javascript', category: 'Web Dev', level: 4, preference: 5},
-  {name: 'Node.js', category: 'Fullstack', level: 3, preference: 5},
-  {name: 'Angular', category: 'Web Dev', level: 4, preference: 5},
-  {name: 'HTML', category: 'Front-end', level: 4, preference: 4},
-  {name: 'CSS', category: 'Front-end', level: 4, preference: 4},
-  {name: 'Python', category: 'Fullstack', level: 3, preference: 4},
-  {name: 'MongoDB', category: 'Back-end', level: 3, preference: 5},
-  {name: 'SQL', category: 'Back-end', level: 3, preference: 3}
+  {name: 'Node.js', category: 'Fullstack', level: 4, preference: 5},
+  {name: 'Angular', category: 'Web Dev', level: 3, preference: 5},
+  {name: 'HTML', category: 'Front-end', level: 3, preference: 3},
+  {name: 'CSS', category: 'Front-end', level: 2, preference: 3},
+  {name: 'Python', category: 'Fullstack', level: 2, preference: 3},
+  {name: 'MongoDB', category: 'Back-end', level: 3, preference: 4},
+  {name: 'SQL', category: 'Back-end', level: 2, preference: 2}
 ];

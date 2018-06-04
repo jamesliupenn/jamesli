@@ -60,8 +60,10 @@
     	width: 32px;
     	fill: #E0E0E0;
   	}
-  	.drawer {
-  	}
+	.hamburger {
+		width: 32px;
+		/*fill: #E0E0E0;*/
+	}
 
 }
 

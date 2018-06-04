@@ -1,25 +1,26 @@
 <app-navbar></app-navbar>
 <div class="body">
-	<div class="image">
-		<img id="round" src="../assets/james-3.png">
-	</div>
 	<div class="title">
 		<h1>{{ title }}</h1>
 	</div>
+	
+	<div class="image">
+		<img id="round" src="../assets/james-3.png">
+	</div>
 
 	<p class="intro"> 
-		Software developer<br/>
-		Sports enthusiast<br/>
-		
+		- Software developer with strong interest in <code>mobile web development</code><br/>
+		- Grow with Google scholarship recipient in Mobile Web Specialist<br/>
+		- Sports enthusiast and a lousy bookwriter
 	</p>
 
 	<!--The resume sections-->
 	<div class="sections">
-		<div id="skills">
-			<app-skillset></app-skillset>
-		</div>
 		<div id="about">
 			<app-about></app-about>
+		</div>
+		<div id="skills">
+			<app-skillset></app-skillset>
 		</div>
 		<div id="projects">
 			<app-projects></app-projects>
@@ -29,5 +30,5 @@
 		</div>
 	</div>
 
-	<p class="footer">Created using Angular, Typescript, HTML, and CSS</p>
+	<div class="footer">Created using Angular, Typescript, HTML, and CSS</div>
 </div>
