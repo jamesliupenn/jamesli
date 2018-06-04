@@ -36,9 +36,31 @@ img {
 .carousel-caption {
 	color: black;
 }
+
 .text-center {
+	display: flex;
+	align-items: center;
 	background-color: white;
+	font-size: 15px;
 	width: 50%;
+	height: 50px;
 	margin-left: auto;
 	margin-right: auto;
+
+}
+
+.projectPics {
+	width: 40%;
+	height: 40%;
+}
+
+@media screen and (max-width: 649px) {
+	.projectPics {
+		width: 70%;
+		height: 60%;
+	}
+	.text-center {
+		font-size: 11px;
+		width: 75%;
+	}
 }

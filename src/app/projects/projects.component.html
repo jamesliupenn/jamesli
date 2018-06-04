@@ -1,10 +1,10 @@
 <div class="wide">
-	<h2>Projects</h2>
+	<!-- <h2>Projects</h2> -->
 	<p></p>
 	<ngb-carousel *ngIf="images">
 		<ng-template ngbSlide *ngFor="let img of images">
 			<a [href]="getUrl(img.url)">
-				<img [src]="getImageSrc(img.imageName)" width="500px" height="500px">
+				<img [src]="getImageSrc(img.imageName)" class="projectPics">
 			</a>
 			<div class="carousel-caption">
 				<h3 class="text-center">{{ img.name }}</h3>

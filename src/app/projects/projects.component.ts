@@ -25,10 +25,11 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 export class ProjectsComponent {
 	images =
 	[
-		{ name: "FIT Dashboard - Angular", imageName: "kone.png", url: ""},
-		{ name: "Portfolio - Built in Angular", imageName: "kone.png", url: "https://github.com/jamesliupenn/jamesli"}, 
-		{ name: "WeatherPug - A React weather app", imageName: "weatherpug.png", url: "https://github.com/jamesliupenn/weather-pug"},
-		{ name: "Pomodoro - A JavaScript Timer", imageName: "pomodoro.png", url: "https://github.com/jamesliupenn/JSpomodoro"}
+		{ name: "RestaurantApp - Grow With Google Mobile Specialist Project", imageName: "kone.png", url: "https://github.com/jamesliupenn/mws-restaurant-stage-1"},
+		{ name: "Portfolio - Mobile website built with Angular, chart.js, and bootstrap", imageName: "portfolio.png", url: "https://github.com/jamesliupenn/jamesli"}, 
+		{ name: "WeatherPug - A simple React weather app utilizing API calls", imageName: "weatherpug.png", url: "https://github.com/jamesliupenn/weather-pug"},
+		{ name: "Pomodoro - A simple JavaScript timer using JQuery and boostrap", imageName: "pomodoro.png", url: "https://github.com/jamesliupenn/JSpomodoro"},
+		{ name: "FT Dashboard - Angular dashboard to monitor file triggered pipelines", imageName: "ftdashboard.png", url: ""}
 	]
 
 	// state: string = 'in';
