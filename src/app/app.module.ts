@@ -18,7 +18,7 @@ import {
           MatSortModule, MatFormFieldModule
        } from '@angular/material';
 import { DialogDataComponent } from './app.component';
-import { LocatorService } from './locator.service';
+// import { LocatorService } from './locator.service';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { LocationComponent } from './location/location.component';
 import { AgmCoreModule } from '@agm/core';
