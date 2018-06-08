@@ -10,7 +10,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 })
 
 export class AppComponent implements OnInit {
-  title = 'JAMES LI';
+  title = "James Li";
 
   constructor(public dialog: MatDialog){ }
 
