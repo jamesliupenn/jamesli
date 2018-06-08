@@ -36,7 +36,7 @@ import { environment } from '../environments/environment';
     AboutComponent,
     HighlighterDirective,
     SkillsetComponent,
-    LocationComponent,
+    // LocationComponent,
   ],
   entryComponents: [
     DialogDataComponent
@@ -55,11 +55,11 @@ import { environment } from '../environments/environment';
     MatToolbarModule,
     MatSortModule,
     NgbModule.forRoot(),
-    AgmCoreModule.forRoot({
-      apiKey: environment.googleApiKey
-    })
+    // AgmCoreModule.forRoot({
+    //   apiKey: environment.googleApiKey
+    // })
   ],
-  providers: [LocatorService],
+  // providers: [LocatorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
