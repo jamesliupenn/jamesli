@@ -6,8 +6,8 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
 
-const URL = environment.googleMapUrl;
-const API_KEY = environment.googleApiKey;
+// const URL = environment.googleMapUrl;
+// const API_KEY = environment.googleApiKey;
 
 @Injectable()
 export class LocatorService {
@@ -21,14 +21,14 @@ export class LocatorService {
 		private http: Http
 		) { }
 
-	getMap() {
-		return this.http.get(URL + "key=" + API_KEY);
-	}
+	// getMap() {
+	// 	return this.http.get(URL + "key=" + API_KEY);
+	// }
 
-	getDistance(coords): Observable <Array<Object>> {
-		return this.http.get(URL + "key=" + API_KEY)
-			.map((res:Response) => res.json())
-			.catch((error:any) => Observable.throw(error.json().error || 'Server error'));
-	}
+	// getDistance(coords): Observable <Array<Object>> {
+	// 	return this.http.get(URL + "key=" + API_KEY)
+	// 		.map((res:Response) => res.json())
+	// 		.catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+	// }
 
 }
