@@ -24,7 +24,20 @@ p {
 	padding-top: 2em;
 }
 
+ul {
+	max-width: 70%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+li {
+	list-style: none;
+	font-size: 13px;
+}
+
 .intro {
+	padding-top: 2em;
 	padding-bottom: 5em;
 }
 
@@ -43,14 +56,9 @@ p {
 	white-space: normal;
 }
 
-.image {
-	overflow:hidden;
-}
 
 #round {
-	width: 25%;
-	height: 15%;
-	border-radius: 0%;
+	max-width: 40%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -62,10 +70,14 @@ p {
 
 @media screen and (min-width: 750px) {
 	#round {
-		width: 40%;
-		height: 25%;
+		max-width: 350px;
 	}
+
 	h1 {
-		font-size: 5em;
+		font-size: 4em;
+	}
+
+	li {
+		font-size: 17px;
 	}
 }
