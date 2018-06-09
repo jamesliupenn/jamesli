@@ -20,7 +20,7 @@ import {
 import { DialogDataComponent } from './app.component';
 // import { LocatorService } from './locator.service';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
-import { LocationComponent } from './location/location.component';
+// import { LocationComponent } from './location/location.component';
 import { AgmCoreModule } from '@agm/core';
 
 import { environment } from '../environments/environment';
