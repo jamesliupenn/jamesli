@@ -6,3 +6,5 @@ This is an Angular project that covers TypeScript, JavaScript, HTML, and CSS. Wi
 4. Chart.js
 5. Angular Materials
 6. Media Queries for Mobile-first
+
+This Angular app has been deployed to https://jamesli-angular-app.herokuapp.com/
